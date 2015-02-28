@@ -5,22 +5,27 @@
 $(function () {
 
     L.toGeoJSON = (function () {
-        var self = this,
-            geoJsonData = [];
+        //An empty array to hold GeoJSON data
+        var geoJsonData = [];
 
-        self.getData = function (url) {
+        //Method to be revealed for retrieving data
+        function getData(url) {
             return $.getJSON(url, function (data) {});
-        };
+        }
 
-        self.convert = function (url, geometryType) {
+        //Method to be revealed for converting JSON to GeoJSON
+        function convert(url, geometryType) {
 
-            return self.getData(url).done(function (data) {
+            //Use promise from getData
+            return getData(url).done(function (data) {
+
+                //Filter to only use objects with Latitude and Longitude
                 var filteredData = data.filter(function (item) {
                     return !!item.Latitude && !! item.Longitude;
                 });
 
+                //For each object create a new GeoJSON object
                 $.each(filteredData, function (index, value) {
-
                     geoJsonData.push({
                         "type": "Feature",
                         "geometry": {
@@ -29,14 +34,14 @@ $(function () {
                         },
                         "properties": value
                     });
-
                 });
             });
-        };
+        }
 
+        //Reveal methods and GeoJSON data
         return {
-            getData: self.getData,
-            convert: self.convert,
+            getData: getData,
+            convert: convert,
             geoJsonData: geoJsonData
         };
 

@@ -2,36 +2,31 @@
   {
       "Job": "Location1",
       "Address": "Denver, CO",
-      "Durration": "1/1/2004 - 1/1/2008",
       "Latitude": 39.7392,
       "Longitude": -104.9903
   },
   {
       "Job": "Location2",
       "Address": "MEMPHIS, TN",
-      "Durration": "1/1/2004 - 1/1/2008",
-      "Latitude": 42.504494,
-      "Longitude": -83.57298
+      "Latitude": 35.1174,
+      "Longitude": -89.9711
   },
   {
       "Job": "Location4",
       "Address": "ORLANDO, FL",
-      "Durration": "1/1/2004 - 1/1/2008",
-      "Latitude": 28.51539,
-      "Longitude": -81.384597
+      "Latitude": 28.4158,
+      "Longitude": -81.2989
   },
   {
       "Job": "Location5",
-      "Address": "ORLANDO, FL",
-      "Durration": "1/1/2004 - 1/1/2008",
-      "Latitude": 39.335637,
-      "Longitude": -82.949928
+      "Address": "DALLAS, TX",
+      "Latitude": 32.7767,
+      "Longitude": -96.7970
   },
   {
       "Job": "Location6",
-      "Address": "KINGSPORT, TN",
-      "Durration": "1/1/2004 - 1/1/2008",
-      "Latitude": 39.335637,
-      "Longitude": -82.949928
+      "Address": "CHICAGO, TN",
+      "Latitude": 41.8369,
+      "Longitude": -87.6847
   }
 ]
