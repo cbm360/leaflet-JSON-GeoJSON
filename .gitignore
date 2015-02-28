@@ -2,3 +2,7 @@
 
 #Webstorm IDE settings
 .idea
+
+#index.html and map.js only for local
+index.html
+map.js
