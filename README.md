@@ -2,9 +2,8 @@
 =========
 
 This can be used to create GeoJSON data from a JSON data source for use with Leaflet.  The use case this is if
-you are utilizing API data that is returns JSON containing valid Latitude and Longitude properties, but would like
+you are utilizing API data that is returns JSON containing valid Latitude and Longitude properties, and would like
 to create a leaflet GeoJSON layer.
-
 
 Required Resources
 ------------------
@@ -60,5 +59,9 @@ Sample Format:
 Helpful Resources
 -----------------
 http://leafletjs.com/reference.html#geojson
+
+
 http://leafletjs.com/examples/geojson.html
+
+
 http://geojson.org/
