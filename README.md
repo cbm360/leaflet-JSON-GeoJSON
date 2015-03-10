@@ -79,6 +79,13 @@ Return GeoJSON
 L.toGeoJSON.geoJsonData;
 ```
 
+Empty GeoJson Array
+
+
+```
+L.toGeoJSON.empty();
+```
+
 Helpful Resources
 -----------------
 http://leafletjs.com/reference.html#geojson

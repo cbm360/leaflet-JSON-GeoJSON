@@ -2,6 +2,7 @@
  * Created by Camron on 2/28/2015.
  */
 
+
 $(function () {
 
     L.toGeoJSON = (function () {
@@ -10,14 +11,11 @@ $(function () {
 
         //Method to be revealed for retrieving data
         function getData(url) {
-            return $.getJSON(url, function (data) {});
+            return $.getJSON(url);
         }
 
         //Method to be revealed for converting JSON to GeoJSON
         function convert(url, geometryType) {
-
-            //Empty array
-            geoJsonData = [];
 
             //Use promise from getData
             return getData(url).done(function (data) {
@@ -28,7 +26,7 @@ $(function () {
                 });
 
                 //For each object create a new GeoJSON object
-                $.each(filteredData, function (index, value) {
+                $.each(filteredData, function (index, value, array) {
                     geoJsonData.push({
                         "type": "Feature",
                         "geometry": {
@@ -41,10 +39,16 @@ $(function () {
             });
         }
 
+        function empty() {
+            geoJsonData = [];
+            L.toGeoJSON.geoJsonData = geoJsonData;
+        }
+
         //Reveal methods and GeoJSON data
         return {
             getData: getData,
             convert: convert,
+            empty: empty,
             geoJsonData: geoJsonData
         };
 
