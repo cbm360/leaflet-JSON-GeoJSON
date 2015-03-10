@@ -16,6 +16,9 @@ $(function () {
         //Method to be revealed for converting JSON to GeoJSON
         function convert(url, geometryType) {
 
+            //Empty array
+            geoJsonData = [];
+
             //Use promise from getData
             return getData(url).done(function (data) {
 

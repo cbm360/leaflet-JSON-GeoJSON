@@ -56,6 +56,29 @@ Sample Format:
   }
 ```
 
+Options
+-------
+Get Data 
+
+
+```
+L.toGeoJSON.getData(url);
+```
+
+Convert JSON to GeoJSON
+
+
+```
+L.toGeoJSON.getData(url, type <POINT, LINESTRING...>);
+```
+
+Return GeoJSON
+
+
+```
+L.toGeoJSON.geoJsonData;
+```
+
 Helpful Resources
 -----------------
 http://leafletjs.com/reference.html#geojson
